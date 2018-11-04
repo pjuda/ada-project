@@ -32,7 +32,7 @@ There are also sets with filtered duplicates
 (e.g. for the same products but on different media like DVD/VHS)
 and csv file with ratings only.
 
-For the preliminary analysis and methodology testng we will use subsets of the full dataset,
+For the preliminary analysis and methodology testing we will use subsets of the full dataset,
 which are available on the website and have a more reasonable size.
 
 The review time is easily extracted from the data.
