@@ -54,4 +54,4 @@ There are overall ratings and also helpfullness score of the data.
 # Questions for TAa
 Add here some questions you have for us, in general or project-specific.
 
-
+Based on your experience, do you think we can deal with Amazon's temporal evolution as well as goodness of reviews or it will be better to focus on one subject only?
