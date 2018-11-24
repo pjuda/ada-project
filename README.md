@@ -1,5 +1,7 @@
 # How Amazon reviews reflect its expansion?
 
+Link to parquet files: [GoogleDrive](https://drive.google.com/drive/folders/1MAZhC17FyhgM_dQY2xwC-jX1nb8Y1r_H?usp=sharing). Download them all.
+
 # Abstract
 
 Amazon was founded in 1994 and started to sell books. It then diversified to sell all kind of items as we know it today.
