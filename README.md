@@ -23,28 +23,22 @@ Then, as items are rated by consummers, it will be great to analyze reviews and 
 # Dataset
 
 ## Data handling
-The dataset contains reviews from 1994 to 2014 [here](http://jmcauley.ucsd.edu/data/amazon/). As the original dataset is significant (33Gb), *Spark* was used to handle and filter the data as a first process step.
+The dataset contains reviews from 1994 to 2014. A description is provided [here](http://jmcauley.ucsd.edu/data/amazon/), but the raw data we obtained were in tsv format: tab-delimited csv file. As the original dataset is significant (33Gb), *Spark* was used to handle and filter the data as a first process step.
 
 The different files were then gather to collect relevant information. The features of interest were stored in *parquet format*. The latter can be handled by *Spark* but also with *Pandas* which could be more convenient to work with at some point.
 
-Link to parquet files: 
-```
-[GoogleDrive](https://drive.google.com/open?id=1BkH7vfupcBaLs2gTYphff6z9Qvg-TcAq)
-```
-Download them all.
+Link to parquet files (approx. 3.5 GB) [Parquets](https://drive.google.com/open?id=1BkH7vfupcBaLs2gTYphff6z9Qvg-TcAq)
 
 Data filtering and storage into parquet files is done in the notebook `reviews-cleaning.ipynb`.
 
 ## Data description
-It appears that the Amazon review dataset consists of set of CSV files containing information about the product itself but also all reviews link to that product.
+It appears that the Amazon review dataset consists of set of tsv files (tab-delimited csv files) containing information about the product itself but also all reviews link to that product.
 A non-exhaustiv list of data's caracteristics:
 
 - Product's ID
 - Product's category
 - Review's date
 - Customer's ID
-
-Note that There are also sets with filtered duplicates (e.g. for the same products but on different media like DVD/VHS) and csv file with ratings only.
 
 Preliminary test were performed to determine data's statistic repartition (e.g. item's repartition per category, reviews' number across time) and data's content to ensure that the provided dataset can answer our research questions.
 We will then used more specifically a subset of the original dataset and focus on particular categories to determine review's reliability.
@@ -55,7 +49,3 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 
 - Characterize Amazon's expansion from 1994 to 2014.
 - Estimate reviews' reliabilities based on the ratings' pertinence and on the reviewers who wrote them.
-
-
-
-
