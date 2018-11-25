@@ -36,7 +36,7 @@ Download them all.
 
 ## Data description
 It appears that the Amazon review dataset consists of set of CSV files containing information about the product itself but also all reviews link to that product.
-A non-exhastiv list of data's caracteristics:
+A non-exhaustiv list of data's caracteristics:
 
 - Product's ID
 - Product's category
