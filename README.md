@@ -33,6 +33,7 @@ Link to parquet files:
 ```
 Download them all.
 
+Data filtering and storage into parquet files is done in the notebook `reviews-cleaning.ipynb`.
 
 ## Data description
 It appears that the Amazon review dataset consists of set of CSV files containing information about the product itself but also all reviews link to that product.
@@ -45,9 +46,10 @@ A non-exhaustiv list of data's caracteristics:
 
 Note that There are also sets with filtered duplicates (e.g. for the same products but on different media like DVD/VHS) and csv file with ratings only.
 
-Preliminary test were performed to determine data's statistic repartition (e.g. item's repartition per category, reviews' number across time).
-We will then used a subset of the original dataset and focus on a particular category to determine review's reliability.
+Preliminary test were performed to determine data's statistic repartition (e.g. item's repartition per category, reviews' number across time) and data's content to ensure that the provided dataset can answer our research questions.
+We will then used more specifically a subset of the original dataset and focus on particular categories to determine review's reliability.
 
+Data exploration and feasability tests were performed in the notebook `amazon-reviews.ipynb`.
 
 # A list of internal milestones up until project milestone 3
 
