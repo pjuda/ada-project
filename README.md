@@ -9,7 +9,7 @@ Since its foundation, Amazon has collected millions of reviews for each article 
 These reviews are collected daily from people using Amazon's services. They played an important role in the development of Amazon. Why so? Because they are the keys in the purchasing process. Indeed, one often feel more comfortable and safe when acting as the others, aren't you.
 
 The aim of this project will be first to study the kind of products sold per Amazon and see the evolution on a time window of 20 years.
-Then, as items are rated by consummers, it will be great to analyze reviews and determine if they are raliable or if they are fake and how they can influence someone's decision to buy an article.
+Then, as items are rated by consummers, it will be great to analyze reviews and determine if they are reliable or if they are fake and how they can influence someone's decision to buy an article.
 
 
 
@@ -45,17 +45,15 @@ A non-exhaustiv list of data's caracteristics:
 
 Note that There are also sets with filtered duplicates (e.g. for the same products but on different media like DVD/VHS) and csv file with ratings only.
 
-Preliminary test were performed to determine data's statistic repartition (e.g. item's repartition per category).
-We will then used a subset of the original dataset and focus on a particular category to determine review's reliability and answer our second question: try to infere how a review can positively or negatively influence someone's perception.
+Preliminary test were performed to determine data's statistic repartition (e.g. item's repartition per category, reviews' number across time).
+We will then used a subset of the original dataset and focus on a particular category to determine review's reliability.
 
 
 # A list of internal milestones up until project milestone 3
 
-* ...
-* ...
+- Characterize Amazon's expansion from 1994 to 2014.
+- Estimate reviews' reliabilities based on the ratings' pertinence and on the reviewers who wrote them.
 
 
-# Questions for TAs
-...
 
 
