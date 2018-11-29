@@ -67,3 +67,35 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 
 16 December
 - final deadline
+
+# Notes
+
+To read the parquet files with read_parquet function of pandas librairy you need to install "pyarrow" or "fastparquet". The parquet files can also be read by pyspark in the following manner:
+
+```
+df = sql_context.read.parquet(PARQUET_DIR + row['parquet'])
+```
+
+Don't forget about importing pyspark before using it:
+
+```
+from pyspark.sql import SparkSession, SQLContext
+from pyspark.sql.types import StructType, StructField, IntegerType, StringType, DateType
+
+spark = SparkSession.builder.getOrCreate()
+sc = spark.sparkContext
+sql_context = SQLContext(sc)
+```
+
+If kernel dies repetadly, using del(df) might help, for instance in this way (not tested):
+
+```
+def count_reviews_with_del(parquet_file):
+    """
+    Counts reviews from specified file
+    """
+    df = pd.read_parquet(PARQUET_DIR + parquet_file)
+    length = df.shape[0]
+    del(df)
+    return length
+```
