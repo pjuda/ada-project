@@ -49,3 +49,21 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 
 - Characterize Amazon's expansion from 1994 to 2014.
 - Estimate reviews' reliabilities based on the ratings' pertinence and on the reviewers who wrote them.
+
+## More detailed planning
+
+29-30 November
+- Continue the temporal analysis by category. (Przemek)
+- Prepare the review datasets with pyspark (create parquets). (Przemek)
+- Find bad reviews (very low usefulness) and do statistical analysis. (Przemek)
+
+1-10 December (Gianni and Lucas)
+- Finalize the project.
+- Analyse of bad reviews? Machine learning to predict a bad review?
+- ...
+
+13-14 December
+- write up the report or data story (we'll probably go for the report) (Przemek, Gianni)
+
+16 December
+- final deadline
