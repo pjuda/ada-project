@@ -53,12 +53,14 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 ## More detailed planning
 
 29-30 November
-- Continue the temporal analysis by category. (Przemek)
+- Continue the **temporal analysis** by category. (Przemek)
 - Prepare the review datasets with pyspark (create parquets). (Przemek)
-- Find bad reviews (very low usefulness) and do statistical analysis. (Przemek)
+- Find bad reviews (very low usefulness) and do **statistical analysis**. (Przemek)
+- Define the concept of reviews and how it works (for the report)
+- Distinguish between helpful reviews and less helpful ones.
 
 1-10 December (Gianni and Lucas)
-- Finalize the project.
+- Finalize the project: 
 - Analyse of bad reviews? Machine learning to predict a bad review?
 - ...
 
