@@ -66,6 +66,8 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 - ...
 
 13-14 December
+- __TODO__ formatting of plots, commenting the notebook properly
+- __TODO__ include the cleaning part and where the data comes from
 - write up the report or data story (we'll probably go for the report) (Przemek, Gianni)
 
 16 December
