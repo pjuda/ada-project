@@ -27,9 +27,10 @@ The dataset contains reviews from 1994 to 2014. A description is provided [here]
 
 The different files were then gather to collect relevant information. The features of interest were stored in *parquet format*. The latter can be handled by *Spark* but also with *Pandas* which could be more convenient to work with at some point.
 
-Link to parquet files (approx. 3.5 GB) [Parquets](https://drive.google.com/open?id=1BkH7vfupcBaLs2gTYphff6z9Qvg-TcAq)
+Link to parquet files (approx. 2 GB) [Parquets](https://drive.google.com/open?id=1CkC4OMzkUiwjt7un_K6jhMlBVD1L4t5o)
 
 Data filtering and storage into parquet files is done in the notebook `reviews-cleaning.ipynb`.
+__TODO__ *this part will be merged to the main notebook.*
 
 ## Data description
 It appears that the Amazon review dataset consists of set of tsv files (tab-delimited csv files) containing information about the product itself but also all reviews link to that product.
@@ -72,11 +73,7 @@ Data exploration and feasability tests were performed in the notebook `amazon-re
 
 # Notes
 
-To read the parquet files with read_parquet function of pandas librairy you need to install "pyarrow" or "fastparquet". The parquet files can also be read by pyspark in the following manner:
-
-```
-df = sql_context.read.parquet(PARQUET_DIR + row['parquet'])
-```
+To read the parquet files with read_parquet function of pandas librairy you need to install "fastparquet". The parquet files can also be read by pyspark.
 
 Don't forget about importing pyspark before using it:
 
