@@ -21,17 +21,17 @@ which is composed of reviews grouped by 43 categories, such as: Books, Wireless,
 Each category contains a collection of reviews records and each record is composed of metadata (the id of review author, the product id, number of positive and total votes about the review from other customers) and the review itself (including the headline and star rating of the product on a scale from 1 to 5).
 
 ## Data description
-The raw data were originally in **tsv** format: tab separated value, a text format.
+The raw data were originally in *tsv* format: tab separated value, a text format.
 
 Given the size of the dataset (over 30 GB), we performed the initial filtering of the data
-using **spark** and extracted the features of interest, such as  **review id**, **product category** and **helpful votes**.
+using *spark* and extracted the features of interest, such as  *review id*, *product category* and *helpful votes*.
 
 We left out the review texts, not required for 
 extracting the statistics about the temporal evolution of the reviews by category. 
-It enabled us to use **pandas** to do this basic analysis, 
+It enabled us to use *pandas* to do this basic analysis, 
 as we reduced the dataset to around 2 GB.
 
-Finally **parquet** format was used to store the reduced dataset.
+Finally *parquet* format was used to store the reduced dataset.
 
 Link to parquet files:
 ```
@@ -45,9 +45,9 @@ https://drive.google.com/open?id=1yzH01tOqDSTRQm_s1Ex0ATbeybDkzbUK
 
 # Contributions
 ```
-Przemyslaw: Data filtering. Parquet file creation. Temporal evolution and statistics.
-Lucas: Model building and final classifier. Algo implementation.
-Gianni: Reviews' sentiment analysis. Plotting graphs. Report writing.
+Przemyslaw: Data filtering. Parquet file creation. Temporal evolution and statistical analysis.
+Lucas: Model building and final classifier. Algorithm implementations.
+Gianni: Temporal analysis. Reviews' sentiment analysis. Plotting graphs. Report writing.
 
 All of us will work on the poster conception.
 
