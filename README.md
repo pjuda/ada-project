@@ -46,7 +46,11 @@ Gianni: Temporal analysis. Reviews' sentiment analysis. Plotting graphs. Report 
 
 ```
 All of us will work on the poster conception.
+
+
+# Content
 The report to be graded can be found in the folder *Report* of the current repository.
+The notebook containing the code is named `amazon-project.ipynb`.
 
 
 
