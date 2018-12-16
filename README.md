@@ -5,7 +5,7 @@
 
 The project focuses on the Amazon's dataset and aims to infer whether reviews that make Amazon's success are reliable or not. 
 To do so,  several machine learning methods were implemented as well as text mining techniques to determine underlying features that make a review bad or good. 
-The final model trained using *K-means* and *DBSCAN* on methodically chosen features performed well at discriminating reviews qualitatively different from the average opinion.
+The final model was trained using *K-means* and *DBSCAN* on methodically chosen features performed well at discriminating reviews qualitatively different from the average opinion.
 
 
 # Dataset
@@ -28,7 +28,7 @@ extracting the statistics about the temporal evolution of the reviews by categor
 It enabled us to use *pandas* to do this basic analysis, 
 as we reduced the dataset to around 2 GB. Finally *parquet* format was used to store the reduced dataset.
 
-Link to parquet files:
+Link to *parquet* files:
 ```
 Features of interest
 https://drive.google.com/open?id=1CkC4OMzkUiwjt7un_K6jhMlBVD1L4t5o
